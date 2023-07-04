@@ -20,13 +20,11 @@ export default defineAppConfig({
     },
     main: {
       padded: true,
-      fluid: true
+      fluid: false
     },
     header: {
-      logo: false,
+      logo: true,
       title: 'Lupus Decoupled Drupal',
-      showLinkIcon: false,
-      exclude: [],
       fluid: false
     },
     footer: {
