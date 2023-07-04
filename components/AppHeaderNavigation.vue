@@ -6,7 +6,6 @@
     <nuxt-link to="/get-started/play-online"> Community </nuxt-link>
   </nav>
 </template>
-
 <style scoped>
 .header-nav {
   display: none;
@@ -22,7 +21,11 @@
   }
 
   .header-nav a:hover {
-    color: #fffffe;
+    color: var(--color-gray-900);
+  }
+
+  .dark .header-nav a:hover {
+    color: var(--color-gray-50);
   }
 }
 </style>
