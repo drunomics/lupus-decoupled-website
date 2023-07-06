@@ -20,6 +20,10 @@
     height: 100%;
   }
 
+  .header-nav a {
+    font-weight: 700;
+  }
+
   .header-nav a:hover {
     color: var(--color-gray-900);
   }

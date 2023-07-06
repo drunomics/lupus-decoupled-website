@@ -14,5 +14,6 @@
 
 .logo span {
   margin-left: 10px;
+  font-weight: 700;
 }
 </style>

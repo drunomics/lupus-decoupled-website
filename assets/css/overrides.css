@@ -1,7 +1,6 @@
 /* Base */
 
 :root {
-  --color-gray-300: #232946;
   --color-gray-400: #232946;
   --color-gray-500: #232946;
 }
@@ -37,4 +36,9 @@
 * {
   --typography-font-body: 'Montserrat', sans-serif;
   font-family: 'Montserrat', sans-serif;
+}
+
+a.router-link-active.router-link-exact-active.link.active {
+  font-weight: 700;
+  color: var(--color-gray-500);
 }
