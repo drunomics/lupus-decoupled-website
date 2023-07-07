@@ -1,0 +1,44 @@
+/* Base */
+
+:root {
+  --color-gray-400: #232946;
+  --color-gray-500: #232946;
+}
+
+.dark:root {
+  --color-gray-300: #b8c1ec;
+  --color-gray-400: #b8c1ec;
+  --color-gray-500: #b8c1ec;
+}
+
+/* Fonts  */
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local('Montserrat'),
+    url('../fonts/Montserrat-Regular.ttf') format('truetype');
+}
+ 
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src:
+    local('Montserrat'),
+    url('../fonts/Montserrat-Bold.ttf') format('truetype');
+}
+
+/* Body */
+
+* {
+  --typography-font-body: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+}
+
+a.router-link-active.router-link-exact-active.link.active {
+  font-weight: 700;
+  color: var(--color-gray-500);
+}
