@@ -13,7 +13,13 @@
 }
 
 .logo span {
+  display: flex;
+  align-items: center;
   margin-left: 10px;
   font-weight: 700;
+}
+
+.dark .logo span {
+  color: var(--color-gray-50);
 }
 </style>

@@ -42,3 +42,13 @@ a.router-link-active.router-link-exact-active.link.active {
   font-weight: 700;
   color: var(--color-gray-500);
 }
+
+div.docs-toc .docs-toc-links a.active {
+  font-weight: 700;
+  color: var(--color-gray-500);
+}
+
+.dark div.docs-toc .docs-toc-links a.active {
+  font-weight: 500;
+  color: var(--color-primary-500);
+}
