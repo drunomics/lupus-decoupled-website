@@ -13,5 +13,9 @@ export default defineNuxtConfig({
 
   colorMode: {
     preference: 'dark'
+  },
+
+  plausible: {
+    domain: 'lupus-decoupled.org'
   }
 })
