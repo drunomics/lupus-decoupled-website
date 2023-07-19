@@ -1,8 +1,8 @@
 <template>
   <nav class="header-nav">
-    <nuxt-link to="/get-started/how-it-works/"> How it works </nuxt-link>
-    <nuxt-link to="/guide/pages-routing/"> Docs </nuxt-link>
-    <nuxt-link to="/examples"> Examples </nuxt-link>
+    <a href="/get-started/how-it-works/">How it works </a>
+    <nuxt-link to="/get-started/create-new-project/"> Docs </nuxt-link>
+  <!-- <nuxt-link to="/examples"> Examples </nuxt-link> -->
     <nuxt-link to="/community"> Community </nuxt-link>
   </nav>
 </template>
