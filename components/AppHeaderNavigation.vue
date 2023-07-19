@@ -1,9 +1,9 @@
 <template>
   <nav class="header-nav">
-    <nuxt-link to="/get-started/how-it-works"> How it works </nuxt-link>
-    <nuxt-link to="/guide/pages-routing"> Docs </nuxt-link>
-    <nuxt-link to="/get-started/play-online"> Examples </nuxt-link>
-    <nuxt-link to="/get-started/play-online"> Community </nuxt-link>
+    <a href="/get-started/how-it-works/">How it works </a>
+    <a href="/get-started/create-new-project/"> Docs </a>
+  <!-- <nuxt-link to="/examples"> Examples </nuxt-link> -->
+    <a to="/community"> Community </a>
   </nav>
 </template>
 <style scoped>
