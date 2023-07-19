@@ -1,3 +1,5 @@
+import path from 'path'
+
 export default defineNuxtConfig({
   // https://github.com/nuxt-themes/docus
   extends: '@nuxt-themes/docus',
@@ -13,6 +15,12 @@ export default defineNuxtConfig({
 
   colorMode: {
     preference: 'dark'
+  },
+
+  nitro: {
+    output: {
+      publicDir: path.join(__dirname, 'dist')
+    }
   },
 
   plausible: {
