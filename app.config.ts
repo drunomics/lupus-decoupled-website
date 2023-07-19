@@ -7,7 +7,7 @@ export default defineAppConfig({
       github: 'drunomics/lupus-decoupled-project'
     },
     github: {
-      dir: 'content',
+      dir: '.content',
       branch: 'main',
       repo: 'lupus-decoupled-website',
       owner: 'drunomics',
@@ -30,7 +30,8 @@ export default defineAppConfig({
     footer: {
       credits: {
         text: 'A project supported by drunomics',
-        icon: 'drunomics-icon'
+        icon: 'drunomics-icon',
+        href: 'https://drunomics.com/en',
       },
       iconLinks: [
         {
