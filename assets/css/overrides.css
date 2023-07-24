@@ -15,15 +15,17 @@
 
 @font-face {
   font-family: 'Montserrat';
+  font-display: swap;
   font-style: normal;
   font-weight: 400;
   src:
     local('Montserrat'),
     url('../fonts/Montserrat-Regular.ttf') format('truetype');
 }
- 
+
 @font-face {
   font-family: 'Montserrat';
+  font-display: swap;
   font-style: normal;
   font-weight: 700;
   src:
