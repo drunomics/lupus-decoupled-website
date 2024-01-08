@@ -30,7 +30,7 @@ export default defineAppConfig({
     footer: {
       credits: {
         text: 'A project supported by drunomics',
-        icon: 'drunomics-icon',
+        icon: 'DrunomicsIcon',
         href: 'https://drunomics.com/en',
       },
       iconLinks: [
