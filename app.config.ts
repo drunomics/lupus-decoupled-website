@@ -7,7 +7,7 @@ export default defineAppConfig({
       github: 'drunomics/lupus-decoupled-project'
     },
     github: {
-      dir: '.content',
+      dir: 'content',
       branch: 'main',
       repo: 'lupus-decoupled-website',
       owner: 'drunomics',
