@@ -2,33 +2,33 @@ import { defineTheme } from 'pinceau'
 
 export default defineTheme({
   color: {
-    black: '#232946',
-    white: '#232946',
+    black: '#1E293B',
+    white: '#ffffff',
     primary: {
-      100: '#eebbc3',
-      200: '#eebbc3',
-      300: '#eebbc3',
-      400: '#eebbc3',
-      500: '#eebbc3',
-      600: '#eebbc3',
-      700: '#eebbc3',
-      800: '#eebbc3',
-      900: '#eebbc3',
+      100: '#2563EB',
+      200: '#2563EB',
+      300: '#2563EB',
+      400: '#2563EB',
+      500: '#2563EB',
+      600: '#2563EB',
+      700: '#2563EB',
+      800: '#2563EB',
+      900: '#2563EB',
     },
     red: {
-      500: '#eebbc3',
+      500: '#2563EB',
     },
   },
   docus: {
     body: {
       backgroundColor: {
-        initial: '#fffffe',
-        dark: '#232946'
+        initial: '{color.white}',
+        dark: '#334155'
       },
       color: {
-        initial: '#232946',
-        dark: '#b8c1ec',
+        initial: '#475569',
+        dark: '#CBD5E1',
       },
-    }
+    },
   },
 })

@@ -1,14 +1,32 @@
 /* Base */
 
 :root {
-  --color-gray-400: #232946;
-  --color-gray-500: #232946;
+  --color-gray-50: #FFFFFF;
+  --color-gray-100: #F1F5F9;
+  --color-gray-300: #E2E8F0;
+  --color-gray-400: #2563EB;
+  --color-gray-500: #475569;
+  --color-gray-600: #1D4ED8;
+  --color-gray-700: #1E293B;
+  --color-gray-900: #1E293B;
 }
 
 .dark:root {
-  --color-gray-300: #b8c1ec;
-  --color-gray-400: #b8c1ec;
-  --color-gray-500: #b8c1ec;
+  --color-gray-50: #FFFFFF;
+  --color-gray-100: #1E293B;
+  --color-gray-200: #FFFFFF;
+  --color-gray-300: #CBD5E1;
+  --color-gray-400: #CBD5E1;
+  --color-gray-500: #93C5FD;
+  --color-gray-600: #FFFFFF;
+  --color-gray-700: #FFFFFF;
+  --color-gray-800: #334155;
+  --color-gray-900: #1E293B;
+  --color-primary-500: #1E293B;
+  --color-primary-600: #2563EB;
+  --color-primary-400: #FFFFFF;
+  --color-primary-900: #2563EB;
+  --docus-search-results-selected-backgroundColor: #334155;
 }
 
 /* Fonts  */
@@ -38,19 +56,75 @@
 * {
   --typography-font-body: 'Montserrat', sans-serif;
   font-family: 'Montserrat', sans-serif;
+  --elements-backdrop-background: var(--color-gray-100);
+  --elements-text-secondary-color-static: var(--color-gray-500);
+  --elements-text-secondary-color-hover: var(--color-gray-600);
 }
 
 a.router-link-active.router-link-exact-active.link.active {
   font-weight: 700;
-  color: var(--color-gray-500);
+  color: var(--color-gray-400);
+}
+
+.dark a.router-link-active.router-link-exact-active.link.active {
+  font-weight: 700;
+  color: var(--color-gray-400);
 }
 
 div.docs-toc .docs-toc-links a.active {
   font-weight: 700;
-  color: var(--color-gray-500);
+  color: var(--color-gray-400);
 }
 
 .dark div.docs-toc .docs-toc-links a.active {
   font-weight: 500;
-  color: var(--color-primary-500);
+  color: var(--color-gray-400);
+}
+
+header button .content span {
+  color: var(--color-gray-400);
+}
+
+header .section.right button .content {
+  border-color: var(--color-gray-400);
+}
+
+header .section.right button .content:hover {
+  border-color: var(--color-gray-600);
+}
+
+.dark header button .content span {
+  color: var(--color-gray-500);
+}
+
+.dark header .section.right button .content {
+  border-color: var(--color-gray-500);
+}
+
+.dark header .section.right button .content:hover {
+  border-color: var(--color-gray-600);
+}
+
+header svg {
+  color: var(--color-gray-400);
+}
+
+.dark header svg {
+  color: var(--color-gray-500);
+}
+
+header svg:hover {
+  color: var(--color-gray-600);
+}
+
+.card .icon {
+  color: var(--color-gray-400);
+}
+
+.dark .termimal .window .line {
+  color: var(--color-gray-200);
+}
+
+:root.dark .docs-prev-next a:hover {
+  color: var(--color-gray-50);
 }
