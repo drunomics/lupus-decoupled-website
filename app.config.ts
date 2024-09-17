@@ -35,11 +35,13 @@ export default defineAppConfig({
       },
       iconLinks: [
         {
-            href: 'https://drupal.org/project/lupus_decoupled',
-            icon: 'simple-icons:drupal'
+          href: 'https://drupal.org/project/lupus_decoupled',
+          label: 'Lupus Decoupled',
+          icon: 'simple-icons:drupal'
         },
         {
           href: 'https://github.com/drunomics/nuxtjs-drupal-ce',
+          label: 'Nuxt Drupal Custom Elements Connector',
           icon: 'simple-icons:nuxtdotjs'
         }
       ]
