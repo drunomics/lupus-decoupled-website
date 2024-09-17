@@ -3,6 +3,7 @@ import path from 'path'
 export default defineNuxtConfig({
   // https://github.com/nuxt-themes/docus
   extends: '@nuxt-themes/docus',
+  plugins: ['~/plugins/metainfo.ts'],
 
   css: ['assets/css/overrides.css'],
 

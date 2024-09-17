@@ -2,6 +2,8 @@ export default defineAppConfig({
   docus: {
     title: 'Lupus Decoupled Drupal',
     description: 'The power of Drupal with a modern frontend.',
+    url: 'https://lupus-decoupled.org',
+    // TODO: Change image after logo is confirmed.
     image: 'https://www.drupal.org/files/styles/grid-3-2x/public/project-images/LupusCustomElementsRender_0.png?itok=gDpQCR7C',
     socials: {
       github: 'drunomics/lupus-decoupled-project'
