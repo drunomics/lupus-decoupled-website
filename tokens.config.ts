@@ -18,6 +18,17 @@ export default defineTheme({
     red: {
       500: '#2563EB',
     },
+    gray: {
+      50: '#ffffff',
+      100: '#f1f5f9',
+      300: '#e2e8f0',
+      400: '#2563eb',
+      500: '#475569',
+      600: '#1d4ed8',
+      700: '#1e293b',
+      900: '#1e293b',
+
+    }
   },
   docus: {
     body: {

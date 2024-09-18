@@ -1,20 +1,13 @@
 /* Base */
 
 :root {
-  --color-gray-50: #ffffff;
-  --color-gray-100: #f1f5f9;
-  --color-gray-300: #e2e8f0;
-  --color-gray-400: #2563eb;
-  --color-gray-500: #475569;
-  --color-gray-600: #1d4ed8;
-  --color-gray-700: #1e293b;
-  --color-gray-900: #1e293b;
   --elements-backdrop-background: var(--color-gray-100);
   --elements-text-secondary-color-static: var(--color-gray-500);
   --elements-text-secondary-color-hover: var(--color-gray-600);
+  --elements-border-primary-hover: var(--color-gray-600);
 }
 
-.dark:root {
+:root.dark {
   --color-gray-50: #ffffff;
   --color-gray-100: #1e293b;
   --color-gray-200: #ffffff;
@@ -22,7 +15,7 @@
   --color-gray-400: #cbd5e1;
   --color-gray-500: #93c5fd;
   --color-gray-600: #ffffff;
-  --color-gray-700: #ffffff;
+  --color-gray-700: #475466;
   --color-gray-800: #334155;
   --color-gray-900: #1e293b;
   --color-primary-500: #1e293b;
@@ -30,7 +23,6 @@
   --color-primary-400: #ffffff;
   --color-primary-900: #2563eb;
   --elements-text-secondary-color-static: var(--color-gray-300);
-  --docus-search-results-selected-backgroundColor: #334155;
   --elements-border-primary-hover: var(--color-gray-50);
 }
 
@@ -133,6 +125,23 @@ header svg:hover {
   color: var(--color-gray-200);
 }
 
+article.page-body div.docs-prev-next a:hover {
+  color: var(--color-gray-600);
+  border-color: var(--color-gray-600);
+}
+
 :root.dark .docs-prev-next a:hover {
   color: var(--color-gray-50);
+}
+
+.aside-nav .app-aside .docs-aside-tree li.bordered:hover {
+  border-color: var(--color-gray-600);
+}
+
+.aside-nav .app-aside .docs-aside-tree li a.link:hover {
+  color: var(--color-gray-600);
+}
+
+:root.dark .code-group {
+  border-color: var(--color-gray-900);
 }
