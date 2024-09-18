@@ -5,6 +5,7 @@
   --elements-text-secondary-color-static: var(--color-gray-500);
   --elements-text-secondary-color-hover: var(--color-gray-600);
   --elements-border-primary-hover: var(--color-gray-600);
+  --elements-border-primary-static: var(--color-gray-300);
 }
 
 :root.dark {
