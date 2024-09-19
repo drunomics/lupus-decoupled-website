@@ -3,7 +3,6 @@ export default defineAppConfig({
     title: 'Lupus Decoupled Drupal',
     description: 'The power of Drupal with a modern frontend.',
     url: 'https://lupus-decoupled.org',
-    // TODO: Change image after logo is confirmed.
     image: '/logo.png',
     socials: {
       github: 'drunomics/lupus-decoupled-project'
@@ -38,7 +37,7 @@ export default defineAppConfig({
       iconLinks: [
         {
           href: 'https://drupal.org/project/lupus_decoupled',
-          label: 'Lupus Decoupled',
+          label: 'Lupus Decoupled Drupal',
           icon: 'simple-icons:drupal'
         },
         {
