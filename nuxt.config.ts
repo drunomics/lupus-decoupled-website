@@ -21,6 +21,9 @@ export default defineNuxtConfig({
   },
 
   nitro: {
+    prerender: {
+      autoSubfolderIndex: false
+    },
     output: {
       publicDir: path.join(__dirname, 'dist')
     }
