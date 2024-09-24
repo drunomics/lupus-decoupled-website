@@ -1,2 +1,31 @@
 # Views
-TODO
+
+The [Lupus Decoupled Views](https://git.drupalcode.org/project/lupus_decoupled/-/blob/1.x/modules/lupus_decoupled_views/README.md)
+submodule provides support for Drupal's Views module. The Views module is Drupal's native way and very powerful way of creating listings of content.
+
+## Usage
+
+After enabling the sub-module, create a view, skip the wizard and follow the following steps:
+
+1. Add `Custom elements display page` to a view (not a regular page!).
+2. Select `Custom elements` style as view format.
+3. Select `Content` as row style. Choose the view-mode you want to use for the listed elements. 
+4. Configure filters and other options as suiting and set a path for the view.
+5. The Custom elements API of the view is available at `/ce-api/<view-path>`. Take note of the custom element name visible in the output, which will be `drupal-view-{ID}`.
+6. On the frontend clone the `drupal-view--default` component and create a component using the noted custom element name `drupal-view-{ID}`. Test the view on the frontend at the configured path `<view-path>` and customize the component as desired.
+
+
+Note that the chosen view-mode is automatically rendered with custom elements within the view. It's not required to force rendering it via custom elements.
+
+## Video tutorial
+
+In the following tutorial an example configuration can be followed: [![Video tutorial](https://www.youtube.com/live/KKTl4z_MGSg?si=j4qWfVlo9IOiobDy&t=1352)](https://www.youtube.com/live/KKTl4z_MGSg?si=j4qWfVlo9IOiobDy&t=1352)
+
+Note: The tutorial is a year old and uses `drupal-view` as custom element name. That changed meanwhile, use `drupal-view-{ID}` as custom element name or stay with the default `drupal-view--default`.
+
+## Status
+
+* Support for Views is rather new and problems may arise with certain configurations. Please report any issues in the [Lupus Decoupled Drupal issue queue](https://www.drupal.org/project/issues/lupus_decoupled?categories=All).
+* Atm there is no support for rendering exposed filter forms. So those need to be added manually in the frontend, when needed.
+* The Row style `Fields` is not supported yet (see
+[#3461874](https://www.drupal.org/project/lupus_decoupled/issues/3461874)).
