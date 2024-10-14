@@ -16,6 +16,11 @@ export default defineNuxtPlugin(() => {
         rel: 'canonical',
         href: canonicalUrl,
       },
+      {
+        rel: 'icon',
+        type: 'image/x-icon',
+        href: '/favicon.ico',
+      },
     ],
   });
 });
