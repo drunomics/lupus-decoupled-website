@@ -19,17 +19,17 @@ export default defineNuxtPlugin(() => {
       {
         rel: 'icon',
         type: 'image/x-icon',
-        href: 'icons/favicon.ico',
+        href: '/icons/favicon.ico',
       },
       {
         rel: 'icon',
         type: 'image/png',
-        href: 'icons/favicon-32x32.png',
+        href: '/icons/favicon-32x32.png',
       },
       {
         rel: 'icon',
         type: 'image/png',
-        href: 'icons/favicon-96x96.png',
+        href: '/icons/favicon-96x96.png',
       },
     ],
   });
