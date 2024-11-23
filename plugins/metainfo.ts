@@ -11,6 +11,24 @@ export default defineNuxtPlugin(() => {
   const canonicalUrl = `https://lupus-decoupled.org${path}`;
 
   useHead({
+    meta: [
+      {
+        property: 'og:url',
+        content: canonicalUrl,
+      },
+      {
+        property: 'og:type',
+        content: 'website',
+      },
+      {
+        name: 'twitter:card',
+        content: 'summary_large_image',
+      },
+      {
+        name: 'twitter:image',
+        content: 'https://lupus-decoupled.org/logo.png',
+      },
+    ],
     link: [
       {
         rel: 'canonical',
