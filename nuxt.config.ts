@@ -20,6 +20,12 @@ export default defineNuxtConfig({
     preference: 'dark'
   },
 
+  content: {
+    highlight: {
+      preload: ['php']
+    }
+  },
+
   nitro: {
     prerender: {
       autoSubfolderIndex: false
