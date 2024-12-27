@@ -32,12 +32,4 @@ export default defineNuxtConfig({
   plausible: {
     domain: 'lupus-decoupled.org'
   }
-
-  content: {
-    highlight: {
-      langs: [
-        'php',
-      ]
-    }
-  }
 })
