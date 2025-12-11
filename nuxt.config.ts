@@ -3,8 +3,8 @@ import path from 'path'
 export default defineNuxtConfig({
   // https://github.com/nuxt-themes/docus
   extends: '@nuxt-themes/docus',
-  plugins: ['~/plugins/metainfo.ts'],
 
+  plugins: ['~/plugins/metainfo.ts'],
   css: ['assets/css/overrides.css'],
 
   modules: [
@@ -37,5 +37,7 @@ export default defineNuxtConfig({
 
   plausible: {
     domain: 'lupus-decoupled.org'
-  }
+  },
+
+  compatibilityDate: '2025-12-11'
 })
