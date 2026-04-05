@@ -1,0 +1,16 @@
+---
+title: 'Providing themes'
+---
+# Providing themes with JavaScript rendering
+
+## Overview
+
+When and why to provide JavaScript rendered themes. Easy to start, CSR. Simple setup. Limitations.
+
+## Lupus Client-Side-Rendering Themes
+
+link to and explain all about lupus_csr here.
+
+0. when to use it and limitations. for Drupal CMS.
+1. how to use it with config form
+2. how to sub-theme it
