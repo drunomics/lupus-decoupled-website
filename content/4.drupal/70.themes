@@ -1,16 +1,39 @@
 ---
 title: 'Providing themes'
 ---
-# Providing themes with JavaScript rendering
+# Providing Themes with JavaScript Rendering
 
 ## Overview
 
-When and why to provide JavaScript rendered themes. Easy to start, CSR. Simple setup. Limitations.
+Lupus CSR (Client-Side Rendering) themes allow you to bundle a pre-built frontend SPA directly as a Drupal theme, so no separate frontend server is needed. Drupal serves the SPA's `index.html` for all frontend routes; the SPA loads in the browser and fetches content from the CE API at `/ce-api/...` on the same origin.
 
-## Lupus Client-Side-Rendering Themes
+This approach is ideal for:
+- Drupal CMS site templates where no separate frontend infrastructure is desired
+- Getting started quickly without setting up a Node.js server
+- Simple projects where SEO is not a primary concern
 
-link to and explain all about lupus_csr here.
+Note that client-side rendering means content is rendered in the browser via JavaScript. Search engines may not fully index CSR content. For production sites where SEO matters, use [server-side rendering](/nuxt/rendering-modes) instead.
 
-0. when to use it and limitations. for Drupal CMS.
-1. how to use it with config form
-2. how to sub-theme it
+## Lupus Client-Side Rendering (Lupus CSR)
+
+[Lupus CSR](https://www.drupal.org/project/lupus_csr) is the Drupal base theme that enables this pattern. It intercepts Drupal's normal HTML output and delivers the SPA's `index.html` instead. Because the SPA communicates with `/ce-api/...` on the same origin, CORS configuration is not needed and Drupal authentication works out of the box.
+
+Install it via Composer:
+
+```bash
+composer require drupal/lupus_csr
+```
+
+### Using Lupus CSR Directly
+
+The simplest approach: enable Lupus CSR as your active theme and configure it through the theme settings form at `/admin/appearance/settings/lupus_csr`. Set a separate admin theme (e.g. Claro) to keep the Drupal backend accessible.
+
+The frontend redirect in Lupus Decoupled settings is not needed with theme-based rendering and can stay disabled.
+
+### Creating a Sub-Theme
+
+For distributable or project-specific setups, create a sub-theme of `lupus_csr` and include your SPA build output in a `dist/` directory. The `lupus_csr` module includes an example Nuxt starter in its `examples/` directory. Refer to the [Lupus CSR project page](https://www.drupal.org/project/lupus_csr) for sub-theme configuration details.
+
+### Canvas Integration
+
+Lupus CSR themes automatically register their Vue components with [Canvas ExtJS](https://www.drupal.org/project/canvas_extjs) when installed, so no manual component registration is needed. The component index is read from the theme's bundled build output.
