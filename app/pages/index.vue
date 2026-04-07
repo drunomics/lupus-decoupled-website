@@ -54,7 +54,7 @@ const features = [
       <div class="absolute -top-[100px] -right-[250px] w-[500px] h-[500px] rounded-full opacity-10 dark:opacity-15 blur-3xl bg-cyan-400 dark:bg-cyan-600" />
     </div>
 
-    <section class="pt-24 sm:pt-32 font-montserrat">
+    <section class="pt-24 sm:pt-32">
       <div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex flex-col lg:flex-row lg:items-start lg:justify-center gap-8">
           <!-- Left: text content -->
