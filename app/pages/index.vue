@@ -55,10 +55,10 @@ const features = [
         <div class="flex flex-col lg:flex-row lg:items-start lg:justify-center gap-8">
           <!-- Left: text content -->
           <div class="flex-1 min-w-0">
-            <h1 class="text-6xl font-bold tracking-tight lg:pr-16">
+            <h1 class="text-5xl lg:text-5xl font-bold tracking-tight text-balance lg:pr-16">
               The power of Drupal, with a modern frontend
             </h1>
-            <p class="my-10 text-lg text-muted">
+            <p class="my-6 lg:my-10 text-lg text-muted">
               Enjoy component-oriented Decoupled Drupal with <a href="https://nuxt.com" target="_blank" class="underline decoration-dotted underline-offset-4 py-1">Nuxt</a> and <a href="https://vuejs.org" target="_blank" class="underline decoration-dotted underline-offset-4 py-1">Vue.js</a>
             </p>
             <ul class="mt-6 space-y-3 text-muted">
@@ -98,7 +98,7 @@ const features = [
           </div>
 
           <!-- Right: bash terminal, pinned to the right edge -->
-          <div class="w-full max-w-[370px] shrink-0 self-start rounded-xl ring-1 ring-white/10 bg-[#1e2432] shadow-xl overflow-hidden">
+          <div class="w-full max-w-[370px] shrink-0 self-start rounded-xl ring-1 ring-white/10 bg-[#1e2432] shadow-xl overflow-hidden mt-4 lg:mt-0">
             <div class="flex items-center px-4 py-3 border-b border-white/5 relative">
               <div class="flex gap-1.5 mr-auto">
                 <div class="w-2.5 h-2.5 rounded-full bg-[#f56565]" />
@@ -119,7 +119,7 @@ const features = [
       </div>
     </section>
 
-    <UPageSection title="Main features" :ui="{ container: '!pt-8 sm:!pt-20' }">
+    <UPageSection title="Main features" :ui="{ container: '!pt-12 sm:!pt-20' }">
       <UPageGrid>
         <UPageCard
           v-for="feature in features"

@@ -11,7 +11,7 @@ const appConfig = useAppConfig()
     xmlns="http://www.w3.org/2000/svg"
     :aria-label="appConfig.header?.title || 'Lupus Decoupled Drupal'"
     role="img"
-    class="!h-8 !w-auto"
+    class="!h-6 sm:!h-8 !w-auto"
   >
     <path
       fill-rule="evenodd"
