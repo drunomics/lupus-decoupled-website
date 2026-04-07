@@ -1,43 +1,36 @@
 import path from 'path'
 
 export default defineNuxtConfig({
-  // https://github.com/nuxt-themes/docus
-  extends: '@nuxt-themes/docus',
+  extends: ['docus'],
 
-  plugins: ['~/plugins/metainfo.ts'],
-  css: ['assets/css/overrides.css'],
+  css: ['./app/assets/css/main.css'],
 
   modules: [
-    // https://github.com/nuxt-modules/plausible
     '@nuxtjs/plausible',
-    // https://github.com/nuxt/devtools
-    '@nuxt/devtools',
-    // https://github.com/nuxt-modules/fontaine
-    '@nuxtjs/fontaine',
   ],
 
-  colorMode: {
-    preference: 'dark'
-  },
-
   content: {
-    highlight: {
-      preload: ['php']
-    }
+    build: {
+      markdown: {
+        highlight: {
+          langs: ['bash', 'diff', 'json', 'js', 'ts', 'html', 'css', 'vue', 'shell', 'mdc', 'md', 'yaml', 'php'],
+        },
+      },
+    },
   },
 
   nitro: {
     prerender: {
-      autoSubfolderIndex: false
+      autoSubfolderIndex: false,
     },
     output: {
-      publicDir: path.join(__dirname, 'dist')
-    }
+      publicDir: path.join(__dirname, 'dist'),
+    },
   },
 
   plausible: {
-    domain: 'lupus-decoupled.org'
+    domain: 'lupus-decoupled.org',
   },
 
-  compatibilityDate: '2025-12-11'
+  compatibilityDate: '2026-04-02',
 })
