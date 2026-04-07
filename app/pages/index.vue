@@ -36,7 +36,7 @@ const features = [
   {
     icon: 'i-tabler-layout-board',
     title: 'Low-code',
-    description: 'Configure Drupal-API output and allow editors to compose pages.',
+    description: 'Configure Drupal-API output and allow editors to compose pages with the Drupal Canvas visual page builder.',
   },
   {
     icon: 'i-lucide-rocket',
