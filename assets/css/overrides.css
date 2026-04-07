@@ -155,3 +155,23 @@ header .section.center svg {
   width: 200px;
   margin-left: -55px;
 }
+
+/* Tables */
+.prose table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+}
+
+.prose table th,
+.prose table td {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--elements-border-primary-static);
+  text-align: left;
+  vertical-align: top;
+}
+
+.prose table th {
+  background-color: var(--elements-backdrop-background);
+  font-weight: 600;
+}
