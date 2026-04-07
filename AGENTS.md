@@ -22,3 +22,5 @@ npm run lint      # Lint code
 
 ## Self-Improvement: Gotchas
 Whenever you discover something surprising or non-obvious while working on this project, append it to this file so future agents avoid the same pitfall.
+
+- All content files must have a `.md` extension to be picked up by Nuxt Content and render as pages. Files without `.md` (e.g. `70.themes`) will cause 404 errors and break the build.
