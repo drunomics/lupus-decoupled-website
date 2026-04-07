@@ -3,9 +3,13 @@ definePageMeta({
   layout: 'default',
 })
 
-useSeoMeta({
-  title: 'Lupus Decoupled Drupal',
-  description: 'The power of Drupal with a modern frontend. Enjoy component-oriented Decoupled Drupal with Nuxt and Vue.js.',
+const title = 'Lupus Decoupled Drupal'
+const description = 'The power of Drupal with a modern frontend. Enjoy component-oriented Decoupled Drupal with Nuxt and Vue.js.'
+
+useSeo({
+  title,
+  description,
+  type: 'website',
 })
 
 const features = [
