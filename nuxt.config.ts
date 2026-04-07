@@ -30,7 +30,12 @@ export default defineNuxtConfig({
 
   modules: [
     '@nuxtjs/plausible',
+    '@nuxtjs/fontaine',
   ],
+
+  fontMetrics: {
+    fonts: ['Montserrat'],
+  },
 
   content: {
     build: {
