@@ -17,7 +17,7 @@ export default defineAppConfig({
     nuxt: 'https://github.com/drunomics/nuxtjs-drupal-ce',
   },
   github: {
-    url: 'https://github.com/drunomics/lupus-decoupled-website',
+    url: 'https://github.com/drunomics/lupus-decoupled-project',
     branch: 'main',
     rootDir: '',
   },
