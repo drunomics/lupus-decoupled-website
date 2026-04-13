@@ -18,7 +18,7 @@ function isActive(link: typeof links[number]) {
 </script>
 
 <template>
-  <nav class="hidden lg:flex items-center gap-6">
+  <nav class="hidden lg:flex items-center justify-between w-full">
     <NuxtLink
       v-for="link in links"
       :key="link.to"
