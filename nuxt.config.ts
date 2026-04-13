@@ -11,9 +11,8 @@ export default defineNuxtConfig({
   app: {
     head: {
       link: [
-        { rel: 'icon', type: 'image/x-icon', href: '/icons/favicon.ico' },
-        { rel: 'icon', type: 'image/png', href: '/icons/favicon-32x32.png' },
-        { rel: 'icon', type: 'image/png', href: '/icons/favicon-96x96.png' },
+        { rel: 'icon', type: 'image/png', href: '/favicon-32x32.png' },
+        { rel: 'icon', type: 'image/png', href: '/favicon-96x96.png' },
       ],
       meta: [
         { property: 'og:image', content: 'https://lupus-decoupled.org/logo.png' },

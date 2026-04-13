@@ -123,7 +123,7 @@ const features = [
       </div>
     </section>
 
-    <UPageSection title="Main features" :ui="{ container: '!pt-12 sm:!pt-20' }">
+    <UPageSection title="Main features" :ui="{ container: '!pt-12 sm:!pt-20', title: 'text-2xl sm:!text-4xl text-left' }">
       <UPageGrid>
         <UPageCard
           v-for="feature in features"

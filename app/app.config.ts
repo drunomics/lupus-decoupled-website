@@ -11,13 +11,16 @@ export default defineAppConfig({
   },
   header: {
     title: 'Lupus Decoupled Drupal',
+    logo: {
+      favicon: '/favicon.ico',
+    },
   },
   socials: {
     drupal: 'https://drupal.org/project/lupus_decoupled',
     nuxt: 'https://github.com/drunomics/nuxtjs-drupal-ce',
   },
   github: {
-    url: 'https://github.com/drunomics/lupus-decoupled-project',
+    url: 'https://github.com/drunomics/lupus-decoupled-website',
     branch: 'main',
     rootDir: '',
   },
