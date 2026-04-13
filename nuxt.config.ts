@@ -1,43 +1,63 @@
 import path from 'path'
 
 export default defineNuxtConfig({
-  // https://github.com/nuxt-themes/docus
-  extends: '@nuxt-themes/docus',
+  extends: ['docus'],
 
-  plugins: ['~/plugins/metainfo.ts'],
-  css: ['assets/css/overrides.css'],
+  site: {
+    url: 'https://lupus-decoupled.org',
+    name: 'Lupus Decoupled Drupal',
+  },
+
+  app: {
+    head: {
+      link: [
+        { rel: 'icon', type: 'image/png', href: '/favicon-32x32.png' },
+        { rel: 'icon', type: 'image/png', href: '/favicon-96x96.png' },
+      ],
+      meta: [
+        { property: 'og:image', content: 'https://lupus-decoupled.org/logo.png' },
+        { name: 'twitter:image', content: 'https://lupus-decoupled.org/logo.png' },
+      ],
+    },
+  },
+
+  llms: {
+    domain: 'lupus-decoupled.org',
+  },
+
+  css: ['./app/assets/css/main.css'],
 
   modules: [
-    // https://github.com/nuxt-modules/plausible
     '@nuxtjs/plausible',
-    // https://github.com/nuxt/devtools
-    '@nuxt/devtools',
-    // https://github.com/nuxt-modules/fontaine
     '@nuxtjs/fontaine',
   ],
 
-  colorMode: {
-    preference: 'dark'
+  fontMetrics: {
+    fonts: ['Montserrat'],
   },
 
   content: {
-    highlight: {
-      preload: ['php']
-    }
+    build: {
+      markdown: {
+        highlight: {
+          langs: ['bash', 'diff', 'json', 'js', 'ts', 'html', 'css', 'vue', 'shell', 'mdc', 'md', 'yaml', 'php'],
+        },
+      },
+    },
   },
 
   nitro: {
     prerender: {
-      autoSubfolderIndex: false
+      autoSubfolderIndex: false,
     },
     output: {
-      publicDir: path.join(__dirname, 'dist')
-    }
+      publicDir: path.join(__dirname, 'dist'),
+    },
   },
 
   plausible: {
-    domain: 'lupus-decoupled.org'
+    domain: 'lupus-decoupled.org',
   },
 
-  compatibilityDate: '2025-12-11'
+  compatibilityDate: '2026-04-02',
 })
