@@ -22,7 +22,7 @@
     "nuxt": "^4.4.2"
   },
   "dependencies": {
-    "better-sqlite3": "^12.8.0",
+    "better-sqlite3": "^13.0.3",
     "docus": "^5.8.1"
   }
 }
