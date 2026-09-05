@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "engines": {
-    "node": ">=22"
+    "node": ">=22.23.2"
   },
   "scripts": {
     "dev": "nuxi dev --extends docus",
@@ -13,16 +13,16 @@
     "lint": "eslint ."
   },
   "devDependencies": {
-    "@nuxt/devtools-kit": "^4.0.0-alpha.3",
-    "@nuxt/eslint-config": "^1.15.2",
+    "@nuxt/devtools-kit": "^4.0.0-alpha.17",
+    "@nuxt/eslint-config": "^1.17.0",
     "@nuxtjs/fontaine": "^0.5.0",
     "@nuxtjs/plausible": "3.0.2",
-    "@types/node": "^25.5.0",
-    "eslint": "^10.1.0",
+    "@types/node": "^25.9.5",
+    "eslint": "^10.10.0",
     "nuxt": "^4.4.2"
   },
   "dependencies": {
-    "better-sqlite3": "^12.8.0",
-    "docus": "^5.8.1"
+    "better-sqlite3": "^12.11.1",
+    "docus": "^5.13.0"
   }
 }
