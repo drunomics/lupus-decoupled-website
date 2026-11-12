@@ -19,7 +19,7 @@
     "@nuxtjs/plausible": "3.0.2",
     "@types/node": "^25.9.9",
     "eslint": "^10.14.0",
-    "nuxt": "^4.6.3"
+    "nuxt": "^4.6.4"
   },
   "dependencies": {
     "better-sqlite3": "^12.11.1",
@@ -28,6 +28,9 @@
   "overrides": {
     "@nuxtjs/fontaine": {
       "fontaine": "^1.0.3"
-    }
+    },
+    "minimatch": "^11.0.8",
+    "glob": "^14.0.5",
+    "zod": "^4.6.7"
   }
 }
