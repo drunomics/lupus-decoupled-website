@@ -3,7 +3,24 @@ export default defineAppConfig({
     colors: {
       primary: 'blue',
       neutral: 'zinc'
-    }
+    },
+    prose: {
+      // Long inline code wraps instead of widening the page.
+      code: {
+        base: 'max-w-full wrap-anywhere',
+      },
+      // Reserve the space of the copy button.
+      pre: {
+        slots: {
+          base: 'pe-12',
+        },
+      },
+      codeGroup: {
+        slots: {
+          list: 'pe-12',
+        },
+      },
+    },
   },
   seo: {
     title: 'Lupus Decoupled Drupal',
